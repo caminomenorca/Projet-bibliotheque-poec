@@ -1,6 +1,6 @@
 
 const biblio=document.getElementById("bookshelf");
-biblio.innerHTML=`<p> change you fuck !!!!</p>`
+const  switchBtn=document.getElementById("")
 
 
 
@@ -17,3 +17,6 @@ function setBook(obj){
     obj.keys.map(propertie,value=>concatlivre+= propertie+":"+value)
     return concatlivre
 }
+
+const juleVerne=setBook(livre)
+ biblio.innerHTML=`<p> ${juleVerne}}</p>`;
