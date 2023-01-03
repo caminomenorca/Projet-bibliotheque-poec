@@ -12,11 +12,5 @@ const livre={
     langue: "français"
 
 }
-function setBook(obj){
-    let concatlivre=""
-    obj.keys.map(propertie,value=>concatlivre+= propertie+":"+value)
-    return concatlivre
-}
 
-const juleVerne=setBook(livre)
- biblio.innerHTML=`<p> ${juleVerne}}</p>`;
+ biblio.innerHTML=`<div class="livreRayon">${livre.titre}</div>`;
