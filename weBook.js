@@ -13,4 +13,4 @@ const livre={
 
 }
 
- biblio.innerHTML=`<div class="livreRayon">${livre.titre}</div>`;
+ biblio.innerHTML=`<div class="livreRayon"><h3 class="titreLivre">${livre.titre}</h3><p class="auteurLivre">${livre.auteur}</p></div>`;
