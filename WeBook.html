@@ -2,8 +2,7 @@
 <head>
     <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
     <link rel ="stylesheet" href="WeBook.css">
- 
-</head>
+ </head>
 
 <body>
     <header>
@@ -22,12 +21,20 @@
             <a href="#"></a>
         </form>
     </header>
+
     <main>
         <div class="bookshelf" id="bookshelf">
-            <p>un paragraphe Ici</p>
-            <p>un pargraphe là</p>
+          <div class="livreRayon livreForm" id="livreForm"></div>
         </div>
-<button id="switchBtn">switch button</button>
+        <button id="switchBtn">switch button</button>
+
+        <form id="myForm">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br><br>
+            <input type="submit" value="Submit">
+        </form> 
     </main>
 
     <script src="weBook.js" crossorigin="anonymous"></script>
