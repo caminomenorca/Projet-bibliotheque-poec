@@ -3,6 +3,14 @@ body{
     font-family: 'Quattrocento', serif;}
 h1,h2,h3{
     font-family: 'Bitter', serif;
+  
+}
+h3,p{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    display:block;
+    background-color:Red
+
 }
 header{
     height: 60px;

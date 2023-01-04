@@ -4,7 +4,6 @@ const biblio = document.getElementById("bookshelf");
 const input = document.querySelector('input[type="file"]');
 const fileLabel = document.getElementById("fileLabel");
 const livreForm = document.getElementById("livreForm");
-const switchBtn=document.getElementById("switchBtn")
 
 input.addEventListener('change', function () {
   const file = input.files[0];
@@ -31,12 +30,11 @@ function displayBooks(arr) {
     biblio.innerHTML += `
     <div class="livreRayon">
     <h3 class="titreLivre">${obj.titre}</h3>
+    <br>
     <p class="auteurLivre">${obj.auteur} </p>
     </div>`;})
 } 
 displayBooks(bookData)
-
-switchBtn.addEventListener("click",displayBooks(bookData))
 
 const actualForm = document.getElementById("myForm");
 livreForm.addEventListener("click", function () {
