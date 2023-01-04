@@ -41,6 +41,43 @@ livreForm.addEventListener("click", function () {
   console.log("Form was opened");
   actualForm.style.display = "block";
 });
+// Select the bookshelf element
+const bookshelf = document.querySelector('.bookshelf');
+
+// Function to create a new book element
+function createBookElement() {
+  const book = document.createElement('div');
+  book.classList.add('livreRayon');
+  book.textContent = 'Book';  // You can set the content of the book element here
+  return book;
+}
+
+// Function to check if the bookshelf is full
+function isBookshelfFull() {
+  // Get the width of the bookshelf and the width of a book element
+  const bookshelfWidth = bookshelf.offsetWidth;
+  const bookWidth = document.querySelector('livreRayon').offsetWidth;
+
+  // Calculate the maximum number of book elements that can fit in the bookshelf
+  const maxNumBooks = Math.floor(bookshelfWidth / bookWidth);
+
+  // Get the current number of book elements in the bookshelf
+  const numBooks = bookshelf.querySelectorAll('livreRayon').length;
+
+  // Return true if the number of book elements is equal to or greater than the maximum
+  return numBooks >= maxNumBooks;
+}
+
+// Function to fill the bookshelf with book elements
+function fillBookshelf() {
+  // Keep creating and appending new book elements until the bookshelf is full
+  while (!isBookshelfFull()) {
+    bookshelf.appendChild(createBookElement());
+  }
+}
+
+// Call the fillBookshelf function to fill the bookshelf initially
+fillBookshelf();
 
 
 
