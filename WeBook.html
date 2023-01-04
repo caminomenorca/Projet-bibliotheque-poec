@@ -2,6 +2,9 @@
 <head>
     <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
     <link rel ="stylesheet" href="WeBook.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Adamina&family=Bitter:wght@400;600&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
  </head>
 
 <body>
@@ -29,21 +32,25 @@
         <button id="switchBtn">switch button</button>
 
         <form id="myForm">
-            <h1 class="modalTitle">So you want to contri'book?</h1>
+            <h1 class="modalTitle">contri'book?</h1>
+                <div class="formContent">
+                    <label for="Cover" id="fileLabel">Cover:</label><br>
+                    <input  type="file" accept ="image/png, image/gif, image/jpeg"  id="Cover" name="Cover"><br>
 
-            <label for="Titre">Titre:</label><br>
-            <input required type="text" id="Titre" name="Titre"><br>
+                    <label for="Titre">Titre:</label><br>
+                    <input required type="text" id="Titre" name="Titre"><br>
 
-            <label for="Auteur">Auteur:</label><br>
-            <input required type="text" id="Auteur" name="Auteur"><br><br>
+                    <label for="Auteur">Auteur:</label><br>
+                    <input required type="text" id="Auteur" name="Auteur"><br><br>
 
-            <label for="Theme">Theme:</label><br>
-            <input required type="text" id="Theme" name="Theme"><br>
+                    <label for="Theme">Theme:</label><br>
+                    <input required type="text" id="Theme" name="Theme"><br>
 
-            <label for="writingDate">writingDate:</label><br>
-            <input required type="number" min="-2477" max="2099" step="1"id="writingDate" name="writingDate"><br>
+                    <label for="writingDate">writing date:</label><br>
+                    <input required type="number" min="-2477" max="2099" step="1"id="writingDate" name="writingDate"><br>
 
-            <input type="submit" value="Submit">
+                    <input type="submit" value="Submit">
+                </div>
         </form> 
     </main>
 

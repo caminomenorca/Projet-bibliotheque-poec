@@ -1,5 +1,9 @@
 body{
-    margin:0;}
+    margin:0;
+    font-family: 'Quattrocento', serif;}
+h1,h2,h3{
+    font-family: 'Bitter', serif;
+}
 header{
     height: 60px;
     margin-bottom:100px;
@@ -13,7 +17,7 @@ header{
 background-image: url("https://cdn.pixabay.com/photo/2017/11/01/09/40/bookshelf-2907509_960_720.png");
 background-size: cover;
 display:flex;
-justify-content: space-around;
+justify-content: center;
 }
 .livreRayon{
     margin:0px;
@@ -29,9 +33,10 @@ justify-content: space-around;
    
     
 }
-.livreRayon.livreForm{
+.livreForm{
     background-color: blue;
     width: 30px;
+    height:100px
    
 }
 .livreForm:active{
@@ -53,17 +58,23 @@ justify-content: space-around;
      right: 0; 
      top: 0;
       bottom: 0;
-       margin: auto; /* Stay in place */
+    margin: auto; /* Stay in place */
     z-index: 1; /* Sit on top */
     width: fit-content; /* Full width */
     height:fit-content; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(243, 199, 5, 0.8); /* Black w/ opacity */
-    text-align: center;
+    ; /* Black w/ opacity */
+    
 }
 #myForm:active{
     display:none
 }
-#modalTitle{
-    background-color:red;
+.modalTitle{
+    background-color: rgba(243, 160, 5, 1)
+}
+.formContent{
+    background-color: rgba(243, 160, 5, 0.8)
+}
+.imagePetite{
+max-height: 50px;
 }
