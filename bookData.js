@@ -1,0 +1,39 @@
+export const bookData = [
+    {
+        auteur:"aaaaa",
+        titre:"aaaaaaa",
+        dateEcriture:1,
+        theme:"aaaaaaa",
+    },
+    {
+        auteur:"bbbbbb",
+        titre:"bbbbbbb",
+        dateEcriture:2,
+        theme:"bbbbbbbb",
+    },
+    {
+        auteur:"ccccc",
+        titre:"cccccc",
+        dateEcriture:3,
+        theme:"cccccc",
+    },
+    {
+        auteur:"ddddddd",
+        titre:"dddddd",
+        dateEcriture:4,
+        theme:"ddddddd",
+    },
+    {
+        auteur:"eeeeee",
+        titre:"eeeeeeee",
+        dateEcriture:5,
+        theme:"eeeeeee",
+    },
+    {
+        auteur:"ffffff",
+        titre:"fffffff",
+        dateEcriture:6,
+        theme:"fffff",
+    }
+    
+];

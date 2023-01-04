@@ -14,25 +14,36 @@ header{
     max-height:100%;
 }
 .bookshelf{
-background-image: url("https://cdn.pixabay.com/photo/2017/11/01/09/40/bookshelf-2907509_960_720.png");
 background-size: cover;
-display:flex;
-justify-content: center;
+width: 80%;
+height: 100%;
+margin: 0 auto;
+border: 10px ;
+overflow: hidden;
+background-color:burlywood;
+background-size: 10px 230px;
+box-shadow: 0px 1000px 0px 400px #7A7668;
 }
+
 .livreRayon{
-    margin:0px;
-    overflow-wrap: break-word;
-    writing-mode: vertical-rl;
-    background-color: darkred;
-    border-top: white 2px solid;;
-    border-radius: 4px;
-    -webkit-box-shadow:inset 0px 0px 0px 1px rgb(7, 7, 7);
-    -moz-box-shadow:inset 0px 0px 0px 1px rgb(8, 8, 8);
-    box-shadow:inset 0px 0px 0px 1px rgb(0, 0, 0);
-    max-width: 40px;
+  height: 100px;
+  width: 40px;
+  float: left;
+  color: white;
+  font-size: 0.9em;
+  font-family: Verdana, sans-serif;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  transition: transform 0.4s ease;
+  background-color: darkgreen;
+  border-left: 1px solid green ;
+  border-right: 1px solid green
    
     
 }
+.livreRayon:hover {
+    transform: scale(1.05);
+  }
 .livreForm{
     background-color: blue;
     width: 30px;
