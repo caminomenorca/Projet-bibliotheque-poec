@@ -4,12 +4,11 @@ main{
 }
 .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(250, 194, 9, 0.342);
+    justify-content: space-evenly;
+    background-color: #fac20957;
   }
 .blockquote{
-    max-width: 30%;
+    max-width: 20%;
 }
 .blockquote > footer{
     font-size:0.6em
@@ -19,12 +18,10 @@ main{
 }
 
 
-#navbar-brand{
-margin:0 auto;
-font-size:4em ;
-font-family: 'Quattrocento', serif;;
+#navbar-brand{ 
+  display:inline-flex;
+font-family: 'Playfair Display', serif;
 }
-
 .btn-group {
     margin-left: 20px;
   }
