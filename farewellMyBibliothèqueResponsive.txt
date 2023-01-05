@@ -1,0 +1,104 @@
+
+function createBookElement() {
+  const book = document.createElement('div');
+  book.classList.add('livreRayon');
+  book.textContent = 'Book';   You can set the content of the book element here
+  return book;
+}
+function isBookshelfFull() {
+   Get the width of the bookshelf and the width of a book element
+  const bookshelfWidth = bookshelf.offsetWidth;
+  const bookWidth = document.querySelector('.livreRayon').offsetWidth;
+
+   Calculate the maximum number of book elements that can fit in the bookshelf
+  const maxNumBooks = Math.floor(bookshelfWidth  bookWidth);
+
+   Get the current number of book elements in the bookshelf
+  const numBooks = bookshelf.querySelectorAll('.livreRayon').length;
+
+   Return true if the number of book elements is equal to or greater than the maximum
+  return numBooks = maxNumBooks;
+}
+function fillBookshelf() {
+   Keep creating and appending new book elements until the bookshelf is full
+  while (!isBookshelfFull()) {
+    bookshelf.appendChild(createBookElement());
+  }
+}
+fillBookshelf()
+
+
+/:::::::::::::://///////////////////
+CSS:
+/:::::::::::::://///////////////////
+
+
+  /* bibliothèque */
+.bookshelf {
+    background-color: burlywood;
+    box-shadow: 0 1000px 0 400px #7A7668;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(auto-fit, 100px);
+    grid-gap: 16px;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 1px solid rgba(228, 162, 76, 0.925);
+    width: 80%;
+    min-height: 100%;
+  }
+
+  .livreRayon {
+    height: 100px;
+    width: 40px;
+    color: white;
+    font-size: 0.9em;
+    font-family: Verdana, sans-serif;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    transition: transform 0.4s ease;
+    background-color: darkgreen;
+    border-left: 1px solid green;
+    border-right: 1px solid green;
+    display: flex;  /* add this line */
+    align-items: center;  /* add this line */
+    justify-content: center;  /* add this line */
+    border-bottom: 4px solid black;
+  }
+  
+.livreRayon:hover {
+    transform: scale(1.05);
+  }
+.livreForm{
+    background-color: blue;
+}
+.livreForm:active{
+    box-shadow: 10px 5px 5px yellowgreen;
+}
+.titreLivre{
+    font-size: x-small;
+}
+
+/* FORM */
+#myForm{
+    display: hidden; /*Should be Hidden by default */
+    position: absolute;
+     left: 0; 
+     right: 0; 
+     top: 0;
+    bottom: 0;
+    margin: auto; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    width: fit-content; /* Full width */
+    height:fit-content; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(243, 160, 5, 0.8);
+}
+
+.modalTitle{
+    background-color: rgba(243, 132, 5, 0.795)
+}
+.imagePetite{
+max-height: 50px;
+}
+/* FIN */
