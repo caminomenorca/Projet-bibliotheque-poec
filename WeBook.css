@@ -5,18 +5,9 @@ h1,h2,h3{
     font-family: 'Bitter', serif;
   
 }
-h3,p{
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    display:block;
-    background-color:Red
 
-}
-header{
-    height: 60px;
-    margin-bottom:100px;
-    background-color: burlywood;   
-    display:flex;
+#pageHeader{ 
+    background-color: red;   
 }
 .navbarElem{
     max-height:100%;
@@ -73,7 +64,7 @@ overflow: hidden;
     height:0px;
 }
 #myForm{
-    display: none; /* Hidden by default */
+    display: hidden; /*Should be Hidden by default */
     position: absolute;
      left: 0; 
      right: 0; 
@@ -84,14 +75,11 @@ overflow: hidden;
     width: fit-content; /* Full width */
     height:fit-content; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    
+    background-color: rgba(243, 160, 5, 0.8);
 }
 
 .modalTitle{
-    background-color: rgba(243, 160, 5, 1)
-}
-.formContent{
-    background-color: rgba(243, 160, 5, 0.8)
+    background-color: rgba(243, 132, 5, 0.795)
 }
 .imagePetite{
 max-height: 50px;
