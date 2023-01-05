@@ -1,17 +1,26 @@
-body{
-    margin:0;
-    font-family: 'Quattrocento', serif;}
-h1,h2,h3{
-    font-family: 'Bitter', serif;
-  
+body{margin:0;}
+.blockquote{
+    max-width: 30%;
+}
+.blockquote > footer{
+    font-size:0.6em
+}
+.blockquote>p{
+    font-size:0.8em
 }
 
-#pageHeader{ 
-    background-color: red;   
+
+.navbar-brand{
+margin:0 auto;
+font-size:4em ;
+font-family: 'Quattrocento', serif;;
 }
-.navbarElem{
-    max-height:100%;
+.btn-group{
+    margin-right: 2em;
+
 }
+
+
 .bookshelf{
 background-size: cover;
 width: 80%;
@@ -57,11 +66,6 @@ overflow: hidden;
 .titreLivre{
     font-size: x-small;
     padding:0px;
-}
-.auteurLivre{
-    padding:0px;
-    font-size: xx-small;
-    height:0px;
 }
 #myForm{
     display: hidden; /*Should be Hidden by default */
