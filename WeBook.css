@@ -19,7 +19,7 @@ main{
 }
 
 
-.navbar-brand{
+#navbar-brand{
 margin:0 auto;
 font-size:4em ;
 font-family: 'Quattrocento', serif;;
@@ -38,8 +38,8 @@ font-family: 'Quattrocento', serif;;
     background-color: burlywood;
     box-shadow: 0 1000px 0 400px #7A7668;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: repeat(auto-fit, 200px);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(auto-fit, 100px);
     grid-gap: 16px;
     overflow: hidden;
     margin: 0 auto;
