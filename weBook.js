@@ -60,5 +60,30 @@ displayBooks(bookData);
 
 ;
 
+function createBookElement() {
+  const book = document.createElement('div');
+  book.classList.add('livreRayon');
+  book.textContent = 'Book';  // You can set the content of the book element here
+  return book;
+}
+function isBookshelfFull() {
+  // Get the width of the bookshelf and the width of a book element
+  const bookshelfWidth = bookshelf.offsetWidth;
+  const bookWidth = document.querySelector('.livreRayon').offsetWidth;
 
+  // Calculate the maximum number of book elements that can fit in the bookshelf
+  const maxNumBooks = Math.floor(bookshelfWidth / bookWidth);
 
+  // Get the current number of book elements in the bookshelf
+  const numBooks = bookshelf.querySelectorAll('.livreRayon').length;
+
+  // Return true if the number of book elements is equal to or greater than the maximum
+  return numBooks >= maxNumBooks;
+}
+function fillBookshelf() {
+  // Keep creating and appending new book elements until the bookshelf is full
+  while (!isBookshelfFull()) {
+    bookshelf.appendChild(createBookElement());
+  }
+}
+fillBookshelf()

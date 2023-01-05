@@ -8,53 +8,57 @@
  </head>
 
 <body>
-    <header>
-    
-       <!-- ajouter générateur de citation -->
-       <p class="navbarElem">blablabla citation Auteur Livre Date</p>
-        <img class="brandLogo navbarElem" src="https://png.pngtree.com/element_our/png/20180912/coffee-time-png_91570.jpg"/>
-        <h1>WeBook</h1>
-        <form class="connexionForm navbarElem">
-            <input type="text" required placeholder="Email or Id">
-            <input type ="password" required placeholder="Password">
-            <!-- programmer redirection mot de passe oublié -->
-            <a href="#">Mot de passe oublié?</a>
-            <button class="connexion-btn btn">me connecter</button>
-            </button>
-            <a href="#"></a>
-        </form>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex">
+  <div class="container">
+    <blockquote class="blockquote mb-0 ">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+    </blockquote>
+    <a class="navbar-brand" href="#">
+      <img src="https://png.pngtree.com/element_our/png/20180912/coffee-time-png_91570.jpg" height="100ù" class="d-inline-block align-top" alt="">
+      Webook
+    </a>
+    <div class="btn-group flex-column">
+      <button type="button" class="btn btn-primary">Join Us</button>
+      <button type="button" class="btn btn-secondary">Log in</button>
+    </div>
+  </div>
+</nav>
+
 
     <main>
         <div class="bookshelf" id="bookshelf">
-          <div class="livreRayon livreForm" id="livreForm"></div>
+          <div class="livreRayon livreForm" id="livreForm"><p>contribook'tion</p></div>
         </div>
-        <button id="switchBtn">switch button</button>
-
         
-        <form id="myForm">
+        
+        <form id="myForm" class="modal">
             <h1 class="modalTitle">contri'book?</h1>
-                <div class="formContent">
-                    <label for="Cover" id="fileLabel">Cover:</label><br>
-                    <input  type="file" accept ="image/png, image/gif, image/jpeg"  id="Cover" name="Cover"><br>
+                    <div class="fileElemContainer">
+                        <label class="" for="Cover" id="fileLabel">Cover:</label><br>
+                        <input class=" .form-control-file"  type="file" accept ="image/png, image/gif, image/jpeg"  id="Cover" name="Cover"><br>
+                    </div>
+                    <label class="formElem" for="Titre">Titre:</label><br>
+                    <input class="formElem" required type="text" id="Titre" name="Titre"><br>
 
-                    <label for="Titre">Titre:</label><br>
-                    <input required type="text" id="Titre" name="Titre"><br>
+                    <label class="formElem" for="Auteur">Auteur:</label><br>
+                    <input class="formElem" required type="text" id="Auteur" name="Auteur"><br><br>
 
-                    <label for="Auteur">Auteur:</label><br>
-                    <input required type="text" id="Auteur" name="Auteur"><br><br>
+                    <label class="formElem" for="Theme">Theme:</label><br>
+                    <input class="formElem" required type="text" id="Theme" name="Theme"><br>
 
-                    <label for="Theme">Theme:</label><br>
-                    <input required type="text" id="Theme" name="Theme"><br>
+                    <label class="formElem" for="writingDate">writing date:</label><br>
+                    <input class="formElem" required type="number" min="-2477" max="2099" step="1"id="writingDate" name="writingDate"><br>
 
-                    <label for="writingDate">writing date:</label><br>
-                    <input required type="number" min="-2477" max="2099" step="1"id="writingDate" name="writingDate"><br>
-
-                    <input type="submit" value="Submit">
-                </div>
+                    <input class="formElem" type="submit" value="Submit">
+                
         </form> 
+       
     </main>
-
+ <footer class="nav bg-dark text-center text-white">
+    <h2>theme</h2>
+    <p>mail</p>
+ </footer>
     <script src="weBook.js" crossorigin="anonymous" type="module"></script>
     <script
     src="https://code.jquery.com/jquery-3.6.3.min.js"
