@@ -81,7 +81,6 @@ CSS:
 
 /* FORM */
 #myForm{
-    display: hidden; /*Should be Hidden by default */
     position: absolute;
      left: 0; 
      right: 0; 
