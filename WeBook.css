@@ -1,7 +1,6 @@
-body{margin:0;}
-main{
-    height: 100vh;
-}
+body{margin:0;
+background-color: #fac20938;}
+
 .container {
     display: flex;
     justify-content: space-evenly;
@@ -16,12 +15,6 @@ main{
 .blockquote>p{
     font-size:0.8em
 }
-
-
-#navbar-brand{ 
-  display:inline-flex;
-font-family: 'Playfair Display', serif;
-}
 .btn-group {
     margin-left: 20px;
   }
@@ -29,3 +22,39 @@ font-family: 'Playfair Display', serif;
   .btn {
     margin-bottom: 10px;
   }
+  
+#bookContainer{
+  width:95%;
+  margin:auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columns with equal width */
+  grid-gap: 10px; /* Add some space between the books */
+  background-color: red;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 80px; /* Set the width of the book */
+  height: 120px; /* Set the height of the book */
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the book */
+  border-radius: 5px; /* Round the corners of the book */
+  overflow: hidden;
+}
+.titreLivre{
+  margin: 5px 0; /* Add some space above and below the book title */
+  font-size: 12px;
+  text-align: center;
+  overflow: hidden; /* Truncate the book title if it is too long */
+  text-overflow: ellipsis;
+}
+#navBas{
+  display:flex;
+  justify-content: space-around;
+
+}
+#myForm{
+  background-color: rgba(243, 160, 5, 0.8);
+}
