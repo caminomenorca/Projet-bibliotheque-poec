@@ -1,73 +1,87 @@
 <!DOCTYPE html>
+
 <head>
-    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
-    <link rel ="stylesheet" href="WeBook.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Playfair+Display:wght@400;500&family=Roboto:wght@300;400;500;900&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
- </head>
+  <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
+  <link rel="stylesheet" href="WeBook.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Playfair+Display:wght@400;500&family=Roboto:wght@300;400;500;900&family=Source+Sans+Pro:wght@400;700&display=swap"
+    rel="stylesheet">
+</head>
 
 <body>
+  <header class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex">
-  <div class="container">
-    <blockquote class="blockquote mb-0 ">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-    </blockquote>
-    <a class="navbar-brand" href="#">
-      <img src="logo-webook.png" height="100ù" class="d-inline-block align-top" alt="">
-      <div>
-        <h1>Webook</h1>
-      <p class="blockquote-footer">Flip le monde the bird </p>
-    </div>
-    </a>
-    <div class="btn-group flex-column">
-      <button type="button" class="btn btn-primary">Join Us</button>
-      <button type="button" class="btn btn-secondary">Log in</button>
-    </div>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
 
-
-    <main>
-      <div id="bookContainer">
-<div type="button" class=" card" data-bs-toggle="modal" data-bs-target="#exampleModal">Contriboot'</div>
+      <blockquote class="blockquote mb-0 ">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+      </blockquote>
+      <a class="navbar-brand" href="#">
+        <img src="logo-webook.png" height="100ù" class="d-inline-block align-top" alt="">
+        <div>
+          <h1>Webook</h1>
+          <p class="blockquote-footer">Flip le monde the bird </p>
+        </div>
+      </a>
+      <div class="btn-group flex-column">
+        <button type="button" class="btn btn-primary">Join Us</button>
+        <button type="button" class="btn btn-secondary">Log in</button>
       </div>
-    </main>
- <footer class="nav bg-dark text-center text-white fixed-bottom" id="navBas">
-    <ul>
-      <h1>aaaaaaa</h1>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-    <ul>
-      <h1>aaaaaaa</h1>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-    <ul>
-      <h1>aaaaaaa</h1>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-    
- </footer>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
+          id="navbarSearchButton">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
 
+    </nav>
+  </header>
 
-    <script src="weBook.js" crossorigin="anonymous" type="module"></script>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    
+  <main>
+    <div id="bookContainer">
+      <div type="button" class=" card" data-bs-toggle="modal" data-bs-target="#exampleModal">Contriboot'</div>
+    </div>
+  </main>
+
+  <footer class="nav bg-dark text-center text-white fixed-bottom" id="navBas">
+    <div class="navBasContainer">
+      <h5>aaaaaaa</h5>
+      <ul>
+        <li>BlaBLaBLA</li>
+        <li>BlaBLaBLA</li>
+        <li>BlaBLaBLA</li>
+        <li>BlaBLaBLA</li>
+      </ul>
+    </div>
+
+    <div class="navBasContainer">
+      <h5>aaaaaaa</h5>
+      <ul>
+        <li>BlaBLaBLA</li>
+        <li>BlaBLaBLA</li>
+        <li>BlaBLaBLA</li>
+        <li>BlaBLaBLA</li>
+      </ul>
+    </div>
+    <div class="navBasContainer">
+      <h5>aaaaaaa</h5>
+      <ul>
+        <li>BlaBLaBLA</li>
+        <li>BlaBLaBLA</li>
+        <li>BlaBLaBLA</li>
+        <li>BlaBLaBLA</li>
+      </ul>
+    </div>
+
+  </footer>
+  
+  <script src="weBook.js" crossorigin="anonymous" type="module"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
 </body>
 
 
