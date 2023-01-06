@@ -31,7 +31,6 @@ header {
 }
 
 #bookContainer {
-  width: 95%;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -84,4 +83,12 @@ header {
 
 #myForm {
   background-color: rgba(243, 160, 5, 0.8);
+}
+.hasOwnModal:hover{
+  background-color: blue;
+  cursor:pointer
+
+}
+.hasOwnModal:active{
+  background-color:pink ;
 }

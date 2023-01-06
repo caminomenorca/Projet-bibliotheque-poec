@@ -46,7 +46,6 @@ function displayBooks(arr) {
 	});
 } 
 displayBooks(bookData);
-/* const hasOwnModal=document.getElementsByClassName("hasOwnModal");
-hasOwnModal.forEach(Elem=>document.getElementById(Elem.)) */
-
-;
+ const hasOwnModal=document.querySelectorAll(".hasOwnModal");
+hasOwnModal.forEach(elem=>elem.addEventListener("click",function(){
+	console.log(elem.id)}))
