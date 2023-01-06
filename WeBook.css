@@ -4,11 +4,12 @@ body {
 }
 
 header {
-  display: flex;
-  justify-content: space-evenly;
   background-color: #fac20957;
 }
-
+#nav{
+  display:flex;
+  justify-content: space-around;
+}
 .blockquote {
   max-width: 20%;
 }
