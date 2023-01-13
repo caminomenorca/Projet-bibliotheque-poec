@@ -1,32 +1,70 @@
-----------Pour Administrateur------------
-Cas:
-Supprimer livre 
-Supprimer compte
-
--------Pour Moderateur-------------
-Supprimer modification utilisateur 
-Supprimer commentaire 
-Acceder au Signalement
-
--------Pour Utilisateur enregistré---------- 
-Se connecter Ajouter un livre Ajouter à bibliothèque personnelle Categoriser livre biblio Perso Se deconnecter Editer commentaire Commenter ou Repondre
-
-----------Pour Visiteur----------
-
-1.Consulter bibliotheque générale:
-
-Le visiteur arrive sur la page d'accueil de Webook,
-il peut déjà consulter la bibliothèque général,
-la bibliothèque général affiche les (posts)livres de haut en bas,sans cliquer on ne voit que les titres et l'auteur,
-en bas de page,il peut clicker sur un bouton"load more" pour charger d'avantage de livre dans la bibliothèque.
+--------------------En Français--------------------
 
 
- 2.Consulter page Individuelle:
-A partir du cas 1 (1.Consulter bibliotheque générale),l'utilisateur peut selectionner un post(livre) pour ouvrir un modal contenant des informations plus précise sur le livre comme des tags,une année de publication ou un bref resumé,le visiteur peut egalement voir dans ce modal les données de type réseau social comme les personnes qui l'ont lu,qui veulent le lire,l'ont aimé ou non,l'ont mis en favoris ainsi que les dernier commentaire et eventuellement acceder au cas 3(3.aller sur Site d'achat) si il est disponible.
+********Pour les administrateurs:**********
 
-3.Aller sur site d'achat
+.Supprimer un livre: Les administrateurs ont la possibilité de supprimer n'importe quel livre de la bibliothèque de Webook.
+.Supprimer un compte: Les administrateurs peuvent supprimer tout compte d'utilisateur, y compris d'autres administrateurs, modérateurs et utilisateurs réguliers.
 
-créer un compte: 
+********Pour les Moderateur:**********
 
-Faire une recherche 
+.Supprimer les modifications d'utilisateur: Les modérateurs peuvent examiner et supprimer toutes les modifications apportées par les utilisateurs à leurs profils ou livres de la bibliothèque.
+.Supprimer les commentaires: Les modérateurs peuvent examiner et supprimer tous les commentaires postés par les utilisateurs sur le site Web de Webook.
+.Accès aux signalements: Les modérateurs peuvent accéder à un système de signalement où ils peuvent consulter et répondre à toutes les plaintes ou violations des conditions d'utilisation du site Web faites par les utilisateurs.
+
+********Pour les utilisateur connectés:**********
+
+.Se connecter: Les utilisateurs peuvent se connecter sur le site Web de Webook en utilisant leur nom d'utilisateur et mot de passe.
+.Ajouter un livre: Les utilisateurs enregistrés peuvent ajouter un nouveau livre à la bibliothèque de Webook en fournissant le titre, l'auteur et les autres informations pertinentes.
+.Ajouter à la bibliothèque personnelle: Les utilisateurs peuvent ajouter des livres à leur bibliothèque personnelle pour un accès et une organisation faciles.
+.Catégoriser un livre dans la bibliothèque personnelle: Les utilisateurs peuvent catégoriser les livres de leur bibliothèque personnelle par des tags ou d'autres critères pour les aider à trouver et à organiser leurs livres.
+.Se déconnecter: Les utilisateurs peuvent se déconnecter de leur compte pour mettre fin à leur session sur le site Web de Webook.
+.Éditer les commentaires: Les utilisateurs enregistrés peuvent éditer leurs propres commentaires sur le site Web de Webook.
+.Commenter ou répondre: Les utilisateurs peuvent laisser des commentaires ou répondre aux commentaires sur le site Web de Webook.
+
+********Pour les Visiteurs:**********
+
+
+
+
+--------------------En anglais--------------------
+
+For Administrators:
+
+Delete book: Administrators have the ability to delete any book from the Webook library.
+Delete account: Administrators can delete any user account, including other administrators, moderators, and regular users.
+For Moderators:
+
+Delete user modifications: Moderators can review and delete any modifications made by users to their profiles or books in the library.
+Delete comments: Moderators can review and delete any comments made by users on the Webook website.
+Access to Reporting: Moderators can access a reporting system where they can view and respond to any complaints or violations of the website's terms of service made by users.
+For Registered Users:
+
+Log in: Users can log in to the Webook website using their username and password.
+Add a book: Registered users can add a new book to the Webook library by providing the book's title, author, and other relevant information.
+Add to personal library: Users can add books to their personal library for easy access and organization.
+Categorize book in personal library: Users can categorize books in their personal library by tags or other criteria to help them find and organize their books.
+Log out: Users can log out of their account to end their session on the Webook website.
+Edit comments: Registered users can edit their own comments on the Webook website.
+Comment or reply: Users can leave comments or reply to comments on the Webook website.
+For Visitors:
+
+Consult General Library:
+The visitor arrives on the Webook homepage
+They can already consult the general library
+The general library displays books from top to bottom, without clicking, only the titles and authors are visible
+At the bottom of the page, they can click on a "load more" button to load more books in the library.
+Consult Individual Page:
+From case 1 (Consult General Library), the user can select a book to open a modal containing more precise information about the book such as tags, a publication year, or a brief summary
+The visitor can also see in this modal the social network data such as the people who have read it, who want to read it, liked it or not, put it in favorites, as well as the latest comments and possibly access case 3
+Go to Purchase Site:
+The user can click on a button or link in the individual page modal that directs them to a purchase website where they can buy the book.
+Create an account:
+The user can click on a link or button to create an account on the Webook website.
+They will be prompted to enter their personal information and create a username and password.
+Search:
+The user can use the search bar on the Webook homepage to search for specific books or authors.
+The search results will be displayed in the general library format with titles and authors visible.
+The user can also filter the search results by tags or publication year to refine their search.
+Visitors can't perform any action that needs to be logged in as they don't have an account on the website yet.
 
