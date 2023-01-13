@@ -1,0 +1,32 @@
+----------Pour Administrateur------------
+Cas:
+Supprimer livre 
+Supprimer compte
+
+-------Pour Moderateur-------------
+Supprimer modification utilisateur 
+Supprimer commentaire 
+Acceder au Signalement
+
+-------Pour Utilisateur enregistré---------- 
+Se connecter Ajouter un livre Ajouter à bibliothèque personnelle Categoriser livre biblio Perso Se deconnecter Editer commentaire Commenter ou Repondre
+
+----------Pour Visiteur----------
+
+1.Consulter bibliotheque générale:
+
+Le visiteur arrive sur la page d'accueil de Webook,
+il peut déjà consulter la bibliothèque général,
+la bibliothèque général affiche les (posts)livres de haut en bas,sans cliquer on ne voit que les titres et l'auteur,
+en bas de page,il peut clicker sur un bouton"load more" pour charger d'avantage de livre dans la bibliothèque.
+
+
+ 2.Consulter page Individuelle:
+A partir du cas 1 (1.Consulter bibliotheque générale),l'utilisateur peut selectionner un post(livre) pour ouvrir un modal contenant des informations plus précise sur le livre comme des tags,une année de publication ou un bref resumé,le visiteur peut egalement voir dans ce modal les données de type réseau social comme les personnes qui l'ont lu,qui veulent le lire,l'ont aimé ou non,l'ont mis en favoris ainsi que les dernier commentaire et eventuellement acceder au cas 3(3.aller sur Site d'achat) si il est disponible.
+
+3.Aller sur site d'achat
+
+créer un compte: 
+
+Faire une recherche 
+

@@ -34,6 +34,11 @@ export const bookData = [
         titre:"fffffff",
         dateEcriture:6,
         theme:"fffff",
+    },
+    {
+        auteur:"gggg",
+        titre:"gggg",
+        dateEcriture:7,
+        theme:"gggggg",
     }
-    
 ];
