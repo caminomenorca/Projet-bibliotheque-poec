@@ -6,13 +6,14 @@
 .Supprimer un livre: Les administrateurs ont la possibilité de supprimer n'importe quel livre de la bibliothèque de Webook.
 .Supprimer un compte: Les administrateurs peuvent supprimer tout compte d'utilisateur, y compris d'autres administrateurs, modérateurs et utilisateurs réguliers.
 
-********Pour les Moderateur:**********
+********Pour les Moderateurs:**********
 
 .Supprimer les modifications d'utilisateur: Les modérateurs peuvent examiner et supprimer toutes les modifications apportées par les utilisateurs à leurs profils ou livres de la bibliothèque.
 .Supprimer les commentaires: Les modérateurs peuvent examiner et supprimer tous les commentaires postés par les utilisateurs sur le site Web de Webook.
 .Accès aux signalements: Les modérateurs peuvent accéder à un système de signalement où ils peuvent consulter et répondre à toutes les plaintes ou violations des conditions d'utilisation du site Web faites par les utilisateurs.
+.Prendre une mesure
 
-********Pour les utilisateur connectés:**********
+********Pour les utilisateurs connectés:**********
 
 .Se connecter: Les utilisateurs peuvent se connecter sur le site Web de Webook en utilisant leur nom d'utilisateur et mot de passe.
 .Ajouter un livre: Les utilisateurs enregistrés peuvent ajouter un nouveau livre à la bibliothèque de Webook en fournissant le titre, l'auteur et les autres informations pertinentes.
@@ -38,6 +39,7 @@ For Moderators:
 Delete user modifications: Moderators can review and delete any modifications made by users to their profiles or books in the library.
 Delete comments: Moderators can review and delete any comments made by users on the Webook website.
 Access to Reporting: Moderators can access a reporting system where they can view and respond to any complaints or violations of the website's terms of service made by users.
+Applying sanction
 
 For Registered Users:
 

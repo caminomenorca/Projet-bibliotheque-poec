@@ -1,0 +1,58 @@
+livre:
+    titre;
+    auteur;
+    série;
+    langue originale;
+    tags;
+    année de publication;
+    résumé;
+    aiment;
+    n'aiment pas;
+    ont lu;
+    veulent lire;
+    favoris;
+    Cover-img
+
+utilisateur:
+niveau de privilège:
+    nom d'utilisateur;
+    mail;
+    mot de passe;
+    bibliothèque personnelle;
+    livres aimés (collection de livres que l'utilisateur a aimés);
+    livres détestés (collection de livres que l'utilisateur a détestés);
+    livres lus (collection de livres que l'utilisateur a lus);
+    livres à lire (collection de livres que l'utilisateur veut lire);
+    favoris (collection de livres que l'utilisateur a ajoutés à ses favoris);
+    nombre d'avertissements;
+
+bibliothèque générale.:
+
+Bibliothèque personnelle:
+
+    livres (collection de livres dans la bibliothèque personnelle de l'utilisateur)
+    balises
+    catégories
+
+Commentaire:
+
+    contenu;
+    date;
+    utilisateur (référence à l'utilisateur qui a fait le commentaire);
+    réfèreA;
+    livre (référence au livre auquel le commentaire est associé);
+    aiment;
+    n'aiment pas;
+
+Système de signalement:
+
+    plaintes;
+    violations;
+    rapports;
+
+Signalements:
+
+    signalant;
+    signalé;
+    contenu visé;
+    date;

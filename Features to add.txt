@@ -1,4 +1,5 @@
-
+utilisateur:
+créer ses catégories pour sa bibliothèque personnelle
 
 base de données:
 .base utilisateur/mot de passe
