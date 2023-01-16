@@ -54,5 +54,7 @@ Signalements:
 
     signalant;
     signalé;
-    contenu visé;
+    contenuVisé;
     date;
+    Status;
+    décision;
