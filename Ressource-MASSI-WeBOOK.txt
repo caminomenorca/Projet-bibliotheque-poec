@@ -1,0 +1,2 @@
+seqlise=remplace sql normal pour js 
+express.js= un peu comme appache
