@@ -1,0 +1,63 @@
+Week 1:
+
+    Week 1:
+
+    Set up the project structure and create a new React and Express project:
+        Create a new directory for the project on your local machine
+        Initialize the project as a React project using the create-react-app command
+        Create a new directory within the project for the Express server
+        Initialize the Express server by creating an index.js file and installing the necessary dependencies (e.g. express, cors, body-parser, etc.)
+    Install the necessary dependencies for React, Express and Sequelize:
+        In the root of the React project, install any additional dependencies for the front-end (e.g. react-router-dom, axios, etc.)
+        In the Express server directory, install any additional dependencies for the back-end (e.g. sequelize, sqlite3, etc.)
+    Build the login and registration pages for users using React:
+        Create a new directory within the src directory of the React project for the login and registration pages
+        Within this directory, create the necessary components for the login and registration pages (e.g. input fields, buttons, etc.)
+        Implement the logic for handling user input and form submission within the components using state and setState
+        Create a new directory within the src directory for handling authentication (e.g. auth)
+        Within this directory, create a new file for handling authentication requests to the server using axios
+        Connect the React components to the Express back-end routes for handling user authentication by importing the auth file and using its methods (e.g. sending login/registration data to the server, receiving and handling responses, etc.)
+    Build the back-end routes and controllers for handling user authentication using Express and Sequelize:
+        In the index.js file, import the necessary middlewares and set up the server
+        Create a new directory within the Express server directory for handling authentication (e.g. auth)
+        Within this directory, create new files for the routes and controllers for handling login and registration requests
+        In the routes file, create the necessary routes for handling login and registration requests (e.g. /login, /register, etc.) and import the corresponding controllers
+        In the controllers file, create the necessary controllers for handling the requests, validating the data and interacting with the database using sequelize
+        Implement the logic for generating and checking user tokens for authentication by creating a new file for handling JWT and import it in the controllers
+
+Week 2:
+
+    Build the library pages for displaying books using React:
+        Create the necessary components for displaying the books in a list or grid format
+        Implement the logic for fetching the books data from the server and displaying it in the components
+    Build the back-end routes and controllers for handling book data using Express and Sequelize:
+        Create the necessary routes for handling book data requests (e.g. fetching all books, fetching a single book, etc.)
+        Create the necessary controllers for handling the requests and interacting with the database using sequelize
+
+Week 3:
+
+    Build the personal library pages for users using React:
+        Create the necessary components for displaying the books in a list or grid format
+        Implement the logic for fetching the personal library data from the server and displaying it in the components
+    Build the back-end routes and controllers for handling personal library data using Express and Sequelize:
+        Create the necessary routes for handling personal library data requests (e.g. fetching a user's personal library, adding a book to a user's personal library, etc.)
+        Create the necessary controllers for handling the requests and interacting with the database using sequelize
+
+Week 4:
+
+    Implement commenting and social network features for the books using React and Express:
+        Add the necessary components and logic for allowing users to leave comments on books
+        Add the necessary back-end routes and controllers for handling comment data and storing it in the database using sequelize
+        Add the necessary components and logic for allowing users to like/dislike books and add them to their favorites
+        Add the necessary back-end routes and controllers for handling social network data and storing it in the database using sequelize
+    Implement search functionality for the library using React and Express:
+        Add a search bar to the library pages in React and implement the logic for sending search requests to the server
+        Create the necessary back-end routes and controllers for handling search requests and returning the relevant data from the database using sequelize
+
+Week 5:
+
+    Test and debug the website:
+        Test the website's functionality and fix any bugs or issues that are found
+    Deploy the website to a hosting service:
+        Choose a hosting service such as Heroku, AWS or Google Cloud
+        Follow the instructions of the hosting service for deploying your application
