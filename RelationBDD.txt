@@ -1,0 +1,39 @@
+Perfect,thanks for your explanation,now some page have some inputs (like registration infos,connexion input,or book's "infos" or comments), that I need to process with backend securly and stock into a database and retrieve for use in my front display,can you explain how to do that simply? 
+Sure! To process user input in your React application and securely send it to a backend server, you'll need to use a combination of client-side and server-side technologies. Here's a simplified overview of the process:
+
+Collecting user input: In your React components, you'll need to use form elements such as <input>, <textarea>, and <select> to collect user input. You can use the onChange event to update the state of your component as the user types, and the value and defaultValue props to control the value of the form elements.
+
+Validating user input: You'll need to validate the user input on the client-side to ensure that it meets the necessary criteria before sending it to the server. You can use built-in validation methods in HTML5 or use a library such as Formik or Yup to handle form validation.
+
+Sending user input to the server: To send the user input to the server, you'll need to use a library such as Axios or Fetch to make an HTTP request. You'll need to pass the user input as the body of the request, and set the appropriate headers such as Content-Type and Authorization.
+
+Securing user input: Before storing the user input in a database
+
+
+
+
+Olivier Carle
+I was thinking about using express and sequelize ? isn't that enought ?
+Yes, Express and Sequelize are both popular choices for building a backend server and interacting with a database in a Node.js application.
+
+Express is a minimal and flexible web application framework for Node.js, it allows you to set up routing, handle HTTP requests and responses, and add middleware to your application.
+
+Sequelize is a promise-based ORM (Object-relational mapping) for Node.js that supports various database systems such as MySQL, PostgreSQL, SQLite and MSSQL. It allows you to interact with the database using a simple and consistent API, and it also provides a powerful set of tools for validating and manipulating data.
+
+Here's a rough idea of how you might use Express and Sequelize to handle user input:
+
+In your React application, make a POST request to the Express server containing the user input.
+
+In Express, create a route that can handle the incoming POST request. This route will be responsible for validating the user input and sending it to the database.
+
+In the route, use Sequelize to create a new instance of your database model and set its properties based on the user input.
+
+Use Sequelize's .save() method to store the new instance in the database.
+
+If the save is successful, you can then respond to the client with a status code indicating that the data was saved successfully.
+
+On the other hand, if the validation fails, you can respond with an error message and the appropriate status code.
+
+You can also use Sequelize's validate method to check the validity of the input before saving it in the database.
+
+Keep in mind that this is just a rough idea and there are many other things that you'll need to consider when building a production-ready application, such as security, error handling, and scalability. Also, make sure to use HTTPS to encrypt the data in transit, and use a JWT token-based authentication to secure your routes.

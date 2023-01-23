@@ -1,0 +1,118 @@
+now my front is working,can you explain how to do multiple pages website with react ?
+
+In React, building a multi-page website typically involves using a library or framework called a "router" that allows you to map specific URLs to specific components. This way, when a user navigates to a specific URL in the browser, the corresponding component is displayed.
+
+There are several libraries you can use to implement routing in a React application, but the most popular one is React Router. React Router allows you to define "routes" that map URLs to specific components.
+
+Here's an example of how to set up routing in a React application using React Router:
+
+First, you'll need to install React Router by running npm install react-router-dom or yarn add react-router-dom in your project's directory.
+
+Next, you'll need to import the BrowserRouter component from react-router-dom and wrap your entire application in it. This component allows you to use the <Link> and <Route> components from React Router.
+
+Copy code
+import { BrowserRouter } from 'react-router-dom';
+
+function App() {
+  return (
+    <BrowserRouter>
+      <div>
+        {/* Your application code here */}
+      </div>
+    </BrowserRouter>
+  );
+}
+Next, you'll need to define your routes using the <Route> component. The <Route> component takes two props: path, which is the URL the route should match, and component, which is the component that should be rendered when the route is matched.
+Copy code
+import { Route } from 'react-router-dom';
+import Home from './Home';
+import About from './About';
+import Contact from './Contact';
+
+function App() {
+  return (
+    <BrowserRouter>
+      <div>
+        <Route exact path="/" component
+
+
+
+Olivier Carle
+there will be mostly three pages on my website,each with components and under components composing them:
+"Main library"
+"Personal Library"
+"Register page"
+Can you use them in your exemple 
+Sure! Here's an example of how you might set up routing in a React application with three pages: "Main library", "Personal Library" and "Register page", using the <Route> component from React Router:
+
+Copy code
+import { Route } from 'react-router-dom';
+import MainLibrary from './MainLibrary';
+import PersonalLibrary from './PersonalLibrary';
+import RegisterPage from './RegisterPage';
+
+function App() {
+  return (
+    <BrowserRouter>
+      <div>
+        <Route exact path="/" component={MainLibrary} />
+        <Route path="/personal" component={PersonalLibrary} />
+        <Route path="/register" component={RegisterPage} />
+      </div>
+    </BrowserRouter>
+  );
+}
+In this example, the <Route> component is used to define three routes, one for each page of your website. The path prop is used to specify the URL that should match each route, and the component prop is used to specify the component that should be rendered when the route is matched.
+
+The exact keyword is used to indicate that the route should only match when the URL exactly matches the path.
+
+You can also use <Link> component from React Router to create links between pages, for example to have a link in your personal library that leads to the main library:
+
+Copy code
+import { Link } from 'react-router-dom';
+
+function PersonalLibrary() {
+  return (
+    <div>
+        <h1>Personal library</h1
+
+
+
+Olivier Carle
+you stopped,can you keep goin?
+Sure! I apologize for the confusion. Here's how you can use the <Link> component to create links between pages:
+
+Copy code
+function PersonalLibrary() {
+  return (
+    <div>
+        <h1>Personal library</h1>
+        <Link to="/">Back to main library</Link>
+    </div>
+  );
+}
+This will create a link that when clicked, it will direct the user to the main library page.
+
+You can also use the <Link> component in your navigation bar for example, to have easy access to your different pages:
+
+Copy code
+function NavigationBar() {
+  return (
+    <div>
+      <Link to="/">Main Library</Link>
+      <Link to="/personal">Personal Library</Link>
+      <Link to="/register">Register</Link>
+    </div>
+  );
+}
+You can also use <Switch> component to wrap your <Route> component which renders the first child <Route> or <Redirect> that matches the location.
+
+In this way, you can make sure that only one of your routes is matched at a time.
+
+You can also use withRouter HOC to access the history object in your components. This can be helpful if you want to programmatically navigate to a new page, for example, when a form is submitted.
+
+You can also use useParams hook to access URL params in your functional component
+
+Please let me know if you have any other questions or if there's anything else I can help you
+
+with.
