@@ -1,44 +1,52 @@
-export const bookData = [
+const bookData = [
     {
         auteur:"aaaaa",
         titre:"aaaaaaa",
         dateEcriture:1,
-        theme:"aaaaaaa",
+        tags:["aaaaaaa"],
+        langue:"javanais"
     },
     {
         auteur:"bbbbbb",
         titre:"bbbbbbb",
         dateEcriture:2,
-        theme:"bbbbbbbb",
+        tags:["bbbbbbbb"],
+        langue:"javanais"
     },
     {
         auteur:"ccccc",
         titre:"cccccc",
         dateEcriture:3,
-        theme:"cccccc",
+        tags:["cccccc"],
+        langue:"javanais"
     },
     {
         auteur:"ddddddd",
         titre:"dddddd",
         dateEcriture:4,
-        theme:"ddddddd",
+        tags:["ddddddd"],
+        langue:"javanais"
     },
     {
         auteur:"eeeeee",
         titre:"eeeeeeee",
         dateEcriture:5,
-        theme:"eeeeeee",
+        tags:["eeeeeee"],
+        langue:"javanais"
     },
     {
         auteur:"ffffff",
         titre:"fffffff",
         dateEcriture:6,
-        theme:"fffff",
+        tags:["fffff"],
+        langue:"javanais"
     },
     {
         auteur:"gggg",
         titre:"gggg",
         dateEcriture:7,
-        theme:"gggggg",
+        tags:["gggggg"],
+        langue:"javanais"
     }
-];
+]
+module.exports.bookData = bookData;
