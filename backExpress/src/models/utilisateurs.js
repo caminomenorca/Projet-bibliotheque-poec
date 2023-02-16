@@ -1,3 +1,4 @@
+const bcrypt=require("bcrypt");
 module.exports = (sequelize, DataTypes) => {
     return sequelize.define('Utilisateur', {
         id: {
@@ -9,6 +10,7 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
             allowNull: false,
             unique: true
+            
         },
         niveau:{
             type: DataTypes.INTEGER,
@@ -24,6 +26,9 @@ module.exports = (sequelize, DataTypes) => {
         },
         password: {
             type: DataTypes.STRING,
+            set(value){
+                this.setDataValue('password', bcrypt.hashSync(value,10));
+            }
         }
     }, {
         timestamps: true,

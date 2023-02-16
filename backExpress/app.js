@@ -45,4 +45,4 @@ app.use(({ res }) => {
 
 app.listen(port, () => {
     console.log(`le serveur a bien commencé sur le port ${port}`)
-})
+});

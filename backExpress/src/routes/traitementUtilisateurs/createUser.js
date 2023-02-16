@@ -1,4 +1,5 @@
 const { User } = require('../../db/sequelizeWebook');
+
 module.exports = (app) => {
     app.post('/WeBook/CreateUser', (req, res) => {
         User.create(req.body)
@@ -8,7 +9,7 @@ module.exports = (app) => {
             })
             .catch(error => {
                 const message = `L'utilisateur n'a pas pu être crée,déso.`
-                res.status(500).json({ message, data: error })
+                res.status(500).json({ message, data: error.message })
             }
             )
     })
