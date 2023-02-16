@@ -1,6 +1,7 @@
 const { Book } = require('../../db/sequelizeWebook');
 module.exports = (app) => {
     app.put('/WeBook/mainLibrary/:id', (req, res) => {
+        
         const id = req.params.id;
         Book.update(req.body, {
             where: { id: id }
@@ -12,7 +13,7 @@ module.exports = (app) => {
                             const message = "Le livre demandé n'existe pas.Réessayer avec un autre identifiant";
                             return res.statut(404).json({ message })
                         }
-                        const message = `le livre ${book.name} a bien été modifié.}`
+                        const message = `le livre ${book.titre} a bien été modifié.}`
                         res.json({ message, data: book })
 
                     })

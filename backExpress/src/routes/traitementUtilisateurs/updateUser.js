@@ -12,7 +12,7 @@ module.exports = (app) => {
                             const message = "L'Utilisateur demandé n'existe pas.Réessayer avec un autre identifiant";
                             return res.statut(404).json({ message })
                         }
-                        const message = `l'Utilisateur ${user.name} a bien été modifié.}`
+                        const message = `l'Utilisateur ${user.userName} a bien été modifié.}`
                         res.json({ message, data: user })
 
                     })

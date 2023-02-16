@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: false,
             unique: true
         },
-        Niveau:{
+        niveau:{
             type: DataTypes.INTEGER,
             allowNull:false,
             defaultValue:0,

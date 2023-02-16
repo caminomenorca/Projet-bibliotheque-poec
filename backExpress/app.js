@@ -3,7 +3,8 @@ const express = require('express');
 const morgan = require('morgan');
 const bodyParser = require('body-parser')
 const sequelize = require('./src/db/sequelizeWebook');
-//require('./src/models/relation');
+
+
 
 //INITIALISATION EXPRESS
 const app = express();
@@ -12,7 +13,8 @@ const port = 2020;
 //MIDDLEWARE
 app
     .use(morgan('dev'))
-    .use(bodyParser.json())
+    .use(bodyParser.json());//->peut être remplacé par express.json
+    
 
 sequelize.initDb()
 
@@ -38,17 +40,7 @@ app.use(({ res }) => {
         const message = 'Impossible de trouver la ressource demandée! Vous pouvez essayer une autre URL.';
         res.status(404).json({ message })
     })
-    /* .use((req, res, next) => {
-        Book.findByPk(req.params.id)
-            .then(livre => {
-                if (livre == null) {
-                    res.status(400).json({ message: "Book not found", data: "" });
-                    return;
-                }
-                res.book = livre;
-                next()
-            });
-    }) */
+   
     
 
 app.listen(port, () => {

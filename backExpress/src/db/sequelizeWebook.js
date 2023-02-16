@@ -14,7 +14,7 @@ const sequelize = new Sequelize('webook', 'root', '', {
 
 //INITIALISATION BDD
 const Book = BookModel(sequelize, DataTypes);
-const User=UtilisateurModel(sequelize,DataTypes);
+const User= UtilisateurModel(sequelize,DataTypes);
 
 const initDb = () => {
     User.Book = User.hasMany(Book)
@@ -35,6 +35,7 @@ const initDb = () => {
         })
 
 }
+const modelArray=[Book,User]
 module.exports = {
-    initDb, Book
+    initDb, Book, User,modelArray
 }
