@@ -14,7 +14,7 @@ const port = 2020;
 app
     .use(morgan('dev'))
     .use(bodyParser.json());//->peut être remplacé par express.json
-    
+
 
 sequelize.initDb()
 
@@ -31,17 +31,17 @@ require('./src/routes/traitementUtilisateurs/findUserByPk')(app);
 require('./src/routes/traitementUtilisateurs/findAllUsers')(app);
 require('./src/routes/traitementUtilisateurs/supprimerUtilisateur')(app);
 require('./src/routes/traitementUtilisateurs/updateUser')(app);
-
+require('./src/routes/traitementUtilisateurs/logUserIn')(app);
 
 
 
 
 app.use(({ res }) => {
-        const message = 'Impossible de trouver la ressource demandée! Vous pouvez essayer une autre URL.';
-        res.status(404).json({ message })
-    })
-   
-    
+    const message = 'Impossible de trouver la ressource demandée! Vous pouvez essayer une autre URL.';
+    res.status(404).json({ message })
+})
+
+
 
 app.listen(port, () => {
     console.log(`le serveur a bien commencé sur le port ${port}`)
