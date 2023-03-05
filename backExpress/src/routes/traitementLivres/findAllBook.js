@@ -2,7 +2,7 @@
 const { Book } = require('../../db/sequelizeWebook')
 module.exports = (app) => {
     // route : /books
-    app.get('/WeBook/mainLibrary', (req, res) => {
+    app.get('/WeBook/mainLibrary/allBooks', (req, res) => {
         Book.findAll()
             .then(books => {
                 const message = 'La bibliothèque principale a bien été recupérée';

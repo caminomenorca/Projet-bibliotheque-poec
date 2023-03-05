@@ -1,6 +1,6 @@
 const { Book } = require('../../db/sequelizeWebook');
 module.exports = (app) => {
-    app.put('/WeBook/mainLibrary/:id', (req, res) => {
+    app.put('/WeBook/mainLibrary/updateBook/:id', (req, res) => {
         
         const id = req.params.id;
         Book.update(req.body, {

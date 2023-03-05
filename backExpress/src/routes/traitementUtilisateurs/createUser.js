@@ -1,7 +1,7 @@
 const { User } = require('../../db/sequelizeWebook');
 
 module.exports = (app) => {
-    app.post('/WeBook/CreateUser', (req, res) => {
+    app.post('/WeBook/Users/create', (req, res) => {
         User.create(req.body)
             .then(user => {
                 const message = `L'utilisateur' ${user.userName} a bien été crée.`

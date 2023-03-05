@@ -1,0 +1,75 @@
+#webook-navbar {
+   display: flex;
+   background: #bbc2e2;
+   border-radius: 4px;
+
+   align-items: center;
+}
+#bloc-citation {
+   max-width: 15em;
+   word-wrap: break-word;
+}
+blockquote {
+   margin: 0;
+}
+
+blockquote p {
+   padding: 5px;
+   background: #eee;
+   border-radius: 5px;
+}
+
+blockquote p::before {
+   content: "\201C";
+}
+
+blockquote p::after {
+   content: "\201D";
+}
+
+#logo-webook {
+   max-height: 144px;
+   padding-bottom: 3em;
+   margin-left: auto;
+   margin-right: auto;
+}
+#interactive-part {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin-left: auto;
+}
+.search-form {
+   display: flex;
+   padding: 0 20px 20px 20px;
+   justify-content: space-between;
+}
+.btn {
+   display:flex;
+   justify-content: center;
+   padding:5px;
+   border-radius: 4px;
+   color: whitesmoke;
+   box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+#search-bar {
+   width: 9em;
+   margin-right: 15px;
+   border-radius: 4px;
+}
+#send-search{
+   border: 1px solid #28A745 ;
+   background-color:inherit;
+}
+#log-options {
+   display: flex;
+   justify-content: space-between;
+   width: 8em;
+}
+#log-in {
+   background-color: #3d8bfd;
+}
+#sign-in {
+   background-color: #9ec5fe;
+}

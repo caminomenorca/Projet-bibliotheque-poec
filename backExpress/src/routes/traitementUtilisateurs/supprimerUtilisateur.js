@@ -1,6 +1,6 @@
 const { User } = require('../../db/sequelizeWebook');
 module.exports = (app) => {
-    app.delete('/WeBook/deleteUser/:id', (req, res) => {
+    app.delete('/WeBook/Users/delete/:id', (req, res) => {
 
         User.findByPk(req.params.id)
             .then(user => {
