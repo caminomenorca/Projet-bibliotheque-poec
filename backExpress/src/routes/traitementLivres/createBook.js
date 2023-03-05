@@ -1,6 +1,6 @@
 const { Book } = require('../../db/sequelizeWebook');
 module.exports = (app) => {
-    app.post('/WeBook/mainLibrary', (req, res) => {
+    app.post('/WeBook/mainLibrary/createBook', (req, res) => {
         Book.create(req.body)
             .then(book => {
                 const message = `Le livre ${book.titre} a bien été crée.`

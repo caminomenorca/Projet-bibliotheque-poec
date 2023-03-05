@@ -1,6 +1,6 @@
 const { User } = require('../../db/sequelizeWebook');
 module.exports=(app)=>{
-    app.get('/WeBook/users',(req,res)=>{
+    app.get('/WeBook/Users/findAll',(req,res)=>{
         User.findAll()
         .then(users => {
             const message = 'La liste des utilisateurs a bien été recupérée';

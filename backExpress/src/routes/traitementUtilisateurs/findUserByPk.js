@@ -1,6 +1,6 @@
 const { User } = require('../../db/sequelizeWebook');
 module.exports = (app) => {
-    app.get('/WeBook/users/:id', (req, res) => {
+    app.get('/WeBook/Users/find/:id', (req, res) => {
         User.findByPk(req.params.id)
             .then(user => {
                 if (user) {

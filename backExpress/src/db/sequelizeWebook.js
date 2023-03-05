@@ -3,7 +3,7 @@ const BookModel = require('../models/ficheLivre');
 const {bookData} = require('./bookData');
 const UtilisateurModel=require('../models/utilisateurs')
 
-const sequelize = new Sequelize('webook', 'root', '', {
+const sequelize = new Sequelize('webook', 'root', '1435puceronneorang1436', {
     host: 'localhost',
     dialect: 'mariadb',
     dialectOptions: {

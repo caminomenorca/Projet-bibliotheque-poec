@@ -2,7 +2,7 @@ const { Book } = require('../../db/sequelizeWebook');
 
 module.exports = (app) => {
 
-    app.delete('/WeBook/mainLibrary/:id', (req, res) => {
+    app.delete('/WeBook/mainLibrary/deleteBook/:id', (req, res) => {
         Book.findByPk(req.params.id)
             .then(livre => {
                 const livreSupprimé = livre;

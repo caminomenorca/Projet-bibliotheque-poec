@@ -1,4 +1,0 @@
-seqlise=remplace sql normal pour js 
-https://sequelize.org/docs/v6/core-concepts/model-querying-finders/
-express.js= un peu comme appache
-Pour scraping:Voir pupeteers
