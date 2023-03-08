@@ -1,0 +1,35 @@
+/* styles for footer container */
+.footer-container {
+  display:flex;
+  justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+   
+    background-color: #32365B;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .folded{
+    height:0px
+  }
+  .unfolded{
+    height: 100px;
+  }
+  /* styles for footer stem */
+  .footer-stem {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+  .down{
+    transform: rotate(180deg);
+  }
+  
+  

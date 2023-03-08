@@ -22,7 +22,7 @@ export default function Header(props) {
          <div id="interactive-part">
             <form className="search-form">
                <input type="text" placeholder="Search a book"  id="search-bar"></input>
-               <input type="submit" className="btn" id="send-search"></input>
+               <input type="submit" className="btn" id="send-search" value="Chercher"></input>
             </form>
             {isLoggedIn ? (
                <dropDown></dropDown>
