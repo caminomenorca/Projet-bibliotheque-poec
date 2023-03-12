@@ -13,9 +13,8 @@ code {
       monospace;
 }
 #load-more-button {
-  margin: auto;
+   margin: auto auto 20px auto;
    display: flex;
-   flex-direction: row;
    justify-content: center;
    align-items: center;
    padding: 10px 30px;
@@ -23,8 +22,5 @@ code {
    height: 50px;
    background: #949ce7;
    border-radius: 4px;
-   flex: none;
-   order: 0;
-   flex-grow: 0;
-   cursor:pointer;
+   cursor: pointer;
 }

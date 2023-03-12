@@ -16,13 +16,20 @@
    flex-direction: column;
    flex-wrap: wrap;
    writing-mode: sideways-lr;
-   background-color: blue;
    border: solid black 1px;
    height: 7em;
    width: min-content;
-   word-break: break-all;
    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
    border-radius: 5px;
+}
+.add-book{
+   background-color: #bbc2e2;
+  color:#f6de29;
+   font-size :larger;
+   align-items: center;
+   margin:0 10px 0 10px;
+   font-weight: bolder;
+   font-style:oblique;
 }
 .book:hover {
    transform: scale(1.2);
