@@ -21,7 +21,10 @@ export default function LibraryFrame(props) {
          .catch((err) => console.error(err));
    }, []);
    const [isVisible,setIsVisible]=useState(false);
-   return (
+   function toggleVisibility(){
+      setIsVisible(!isVisible)
+   }
+   return (<>
       <div id="library-frame">
          <article className="book add-book" id="add-book">
             <p className="book-title" onClick={toggleVisibility}>Add book</p>
@@ -36,7 +39,8 @@ export default function LibraryFrame(props) {
                <h6 className="book-author">{book.auteur}</h6>
             </article>
          ))}
-         <ModalAjout isVisible={isVisible}/>
+         
       </div>
-   );
+      <ModalAjout isVisible={isVisible} toggleVisibility={toggleVisibility}/>
+   </>);
 }
