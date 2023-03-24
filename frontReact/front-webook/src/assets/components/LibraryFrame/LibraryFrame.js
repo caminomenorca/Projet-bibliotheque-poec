@@ -13,34 +13,48 @@ function getRandomColor() {
 
 export default function LibraryFrame(props) {
    const [books, setBooks] = useState([]);
-   useEffect(() => {
+
+   function getAllBooks(setBooks) {
       const options = { method: "GET" };
       fetch("http://localhost:2020/WeBook/mainLibrary/allBooks", options)
          .then((response) => response.json())
          .then((response) => setBooks(response.data))
          .catch((err) => console.error(err));
-   }, []);
-   const [isVisible,setIsVisible]=useState(false);
-   function toggleVisibility(){
-      setIsVisible(!isVisible)
    }
-   return (<>
-      <div id="library-frame">
-         <article className="book add-book" id="add-book">
-            <p className="book-title" onClick={toggleVisibility}>Add book</p>
-         </article>
-         {books.map((book) => (
-            <article
-               key={book.titre}
-               className="book"
-               style={{ backgroundColor: getRandomColor() }}
-            >
-               <p className="book-title">{book.titre}</p>
-               <h6 className="book-author">{book.auteur}</h6>
+   useEffect(() => {
+      getAllBooks(setBooks);
+   }, []);
+
+   const [isVisible, setIsVisible] = useState(false);
+   function toggleVisibility() {
+      setIsVisible(!isVisible);
+   }
+   return (
+      <>
+         <div id="library-frame">
+            <article className="book add-book" id="add-book">
+               <p className="book-title" onClick={toggleVisibility}>
+                  Add book
+               </p>
             </article>
-         ))}
-         
-      </div>
-      <ModalAjout isVisible={isVisible} toggleVisibility={toggleVisibility}/>
-   </>);
+            {books.map((book) => (
+               <article
+                  key={book.titre}
+                  className="book"
+                  style={{ backgroundColor: getRandomColor() }}
+               >
+                  <p className="book-title">{book.titre}</p>
+                  <h6 className="book-author">{book.auteur}</h6>
+               </article>
+            ))}
+         </div>
+         <ModalAjout
+            isVisible={isVisible}
+            toggleVisibility={toggleVisibility}
+            getAllBooks={getAllBooks}
+            setBooks={setBooks}
+            
+         />
+      </>
+   );
 }

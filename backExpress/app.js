@@ -1,7 +1,6 @@
 //IMPORT
 const express = require('express');
 const morgan = require('morgan');
-const bodyParser = require('body-parser')
 const sequelize = require('./src/db/sequelizeWebook');
 const cors=require('cors')
 
@@ -13,7 +12,7 @@ const port = 2020;
 //MIDDLEWARE
 app
     .use(morgan('dev'))
-    .use(bodyParser.json())//->peut être remplacé par express.json
+    .use(express.json())//->peut être remplacé par express.json
     .use(cors());
 
 sequelize.initDb()

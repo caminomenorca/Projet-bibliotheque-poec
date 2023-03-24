@@ -25,11 +25,18 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
             allowNull: true,
             get(){ 
-                return this.getDataValue('tags').split(',')
+                const tags=this.getDataValue('tags')
+                if(tags){
+                return tags.split(',')}
+                else{return [];}
             },
-            set(types){
-                this.setDataValue('tags',types.join())
-            }
+            set(tags) {
+                if (Array.isArray(tags)) {
+                  this.setDataValue('tags', tags.join());
+                } else {
+                  this.setDataValue('tags', tags);
+                }
+              }
         }
     }, {
         timestamps: true,
